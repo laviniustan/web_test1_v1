@@ -1,0 +1,85 @@
+.footer{
+    .fab, .far {
+        font-weight: 400;
+        margin-left: 2rem;
+    }
+    .payimg{
+        height: 100%;
+ 
+    }
+    .companie{
+        height: 100%;
+        @include respond(laptop){
+            height: 6rem;
+        }
+    }
+  
+    .other{
+       margin-top: 5rem;
+       
+    }
+    display: flex;
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    // text-decoration: none;
+    justify-content: center;
+   
+    h1{
+        font-size: 16px;
+        padding: 1rem 0rem;
+    }
+    &__component{
+        padding: 4rem;
+        @include respond(tab-port){
+            padding: 2rem;
+        }
+        // display: block;
+        &--list{
+            &>*{
+                color: white;
+                text-decoration: none;
+            }
+            
+        //    padding: 3rem;
+            display: grid;
+            justify-items: start;
+            grid-gap: .5rem;
+            
+            &--logo{
+                display: grid;
+                justify-items: center;
+                grid-gap: 1rem;
+                @include respond(tab-port){
+                    display: none;
+                    padding: 0;
+                }
+            }
+               
+
+                .logo{
+                    height: 3rem;
+                    // padding: 2rem;
+                    @include respond(laptop){
+                        height: 3rem;
+                     
+                   
+                }
+            }
+         
+
+            &--contact{
+                margin-top: 1rem;
+                &--media{
+                    size: 7rem;
+                    padding: 1rem 0rem;
+                    &>*{
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+

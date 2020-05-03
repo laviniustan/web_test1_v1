@@ -1,0 +1,68 @@
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    height: 10rem;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+//   .active {
+//     background-color: #4CAF50;
+//   }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  .nav__menu{
+      color: white;
+      display: flex;
+      &>*{
+        margin: 0rem 20px;
+        size: 3rem;
+      }
+      
+  }
+
+//   .btn {
+  
+    
+//     .dropdown-toggle {
+//         color: rgb(117, 4, 4);
+//         color: white;
+//         background-color: black;
+//          border-color: black; 
+//   }
+// }
+
+.btn.dropdown-toggle{
+    &:hover{
+        color: white;
+    }
+    color: white;
+}
+.dropdown-menu.show{
+    z-index: -3;
+    background-color: black;
+    color: white;
+}
+.bi {
+    width: 1.4rem;
+}

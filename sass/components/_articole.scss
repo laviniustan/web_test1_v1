@@ -1,0 +1,49 @@
+.articole{
+   
+    &__bg{
+        display: grid;
+        align-items: center;
+        height: 40rem;
+        width: 100%;
+        background-image: url('/img/articole.jpg');
+        // background-size: cover;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &__txt{
+        .txt{
+            width: 25rem;
+            
+        }
+        .title{
+            padding: .3rem;
+            text-align: center;
+            text-align: justify;
+    
+        
+        }
+        h1{
+            font-size:5rem;
+        }
+       
+        &>*{
+           padding: 4rem;
+           @include respond(tab-port){
+  
+            padding: 1rem;
+            
+            }  
+     
+       }
+       color: white;
+         display: grid;
+         page-break-after: auto;
+       
+         justify-items: center;
+    }
+    .btn{
+        color: white;
+        width: 15rem;
+    }
+}

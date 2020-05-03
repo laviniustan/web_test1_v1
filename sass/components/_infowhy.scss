@@ -1,0 +1,216 @@
+.infowhy{
+    @include respond(tab-land){
+        .logoimg{
+            height:7rem ;
+            width: auto;
+
+            @include respond(tab-port){
+                height: 4rem;
+                width: auto;
+            } 
+        }
+    }
+
+    &--title{
+        padding-top:3rem ;
+        color: white;
+        text-align: center;
+        // padding-bottom: 0;
+        // margin-bottom: -6rem;
+        h1{
+            margin-bottom: -1rem;
+        }
+
+        @include respond(tab-land){
+            h1{
+                font-size: 2rem;
+            }
+        }
+    
+    }
+    &--backgroun{
+        display: grid;
+        justify-items: center;
+        height:80rem ;
+         background-image: url('/img/Component\ 1\ –\ 1.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+        //  background-size:cover;
+         background-position: 0 0 0 0;
+         @include respond(tab-land ){
+           background-size: 100%;
+        }
+
+    }
+
+    &__comp1{
+        display: flex;
+        text-align: center;
+       justify-content: space-evenly; 
+       padding: 5rem 19rem 0;
+
+       @include respond(tab-port){
+        padding: 0rem 16rem 0;
+        margin-top: -6rem;
+       }
+    
+    
+
+       @include respond(tab-land){
+        // background-size: 100%;
+            padding: 5rem 19rem 0;
+            img{
+                height: 29%;    
+                width: auto;
+            }
+            
+
+         }
+         @include respond(tab-port ){
+            img{
+                height: 16%;
+                width: auto
+            }
+        }
+
+        h1{
+            padding: 1.5rem;
+
+            @include respond(tab-port ){
+                padding: 0.5rem;
+            }
+        }
+        // padding: 3rem;
+        &--1{
+            color: #ABE7FC;
+        }
+        &--2{
+            margin-top: -1rem;
+            color: #A7E9C4 ;
+        }
+        &--3{
+            color: #FEF0C2;
+        }
+        
+        &--txt{
+            width: 70%;
+           margin-left: 6rem;
+            //  text-align: center;
+            @include respond(tab-port ){
+                width: 100%;
+                margin-left: 0rem;
+            }
+
+        }
+    }
+
+    &--img{
+        margin-top: -5rem ;
+        padding-bottom: 1rem;
+
+        @include respond(laptopL){
+            margin-top: -15rem;
+            height: 95rem;
+        }
+        @include respond(tab-land){
+            height: 75rem;
+            margin-top: -15rem ;
+        }
+        @include respond(tab-port ){
+            height: 47rem;
+            margin-top: -24rem;
+        
+        }
+    }
+// ============
+    &__comp2{
+       
+
+        @include respond(tab-land){
+            margin-top: 0;
+        }
+        @include respond(tab-port){
+            padding: 0rem;
+            margin-top: -16rem;
+            .imgW{
+                height: 4rem;
+            }
+        }
+        .button {
+            margin-top: 4rem;
+            @include respond(tab-land){
+                margin: 2rem
+            }
+        }
+        // .btn{
+        //     margin: 5rem 0rem;
+        //     color:white;
+        //     &__descopera{
+        //         height: 4rem;
+        //         width: 23%;
+        //     }
+        // }
+ 
+
+        padding: 7rem;
+        display: grid;
+        justify-items: center;
+        margin-top: 20rem;
+
+        &--allelem{
+            padding: 5rem 2rem 0;
+            display: flex;
+            justify-content: center;
+
+            @include respond(tab-port){
+                padding: 0rem 0rem 0;
+            }
+            
+        }
+        &--elem{
+            width: 35%;
+            height: 8rem;
+            color: white;
+            background-color: black;
+            padding: 6rem 4rem;
+            display: flex;
+            margin-right: .4rem;
+
+           align-items: center;
+           text-align: center;
+           border-radius: .5rem;
+
+
+        .infocomp{
+            text-align: left;
+            h3{
+                padding-bottom: 1rem;
+               
+            @include respond(laptopL){
+                padding-bottom: 1rem;
+                font-size: 6px;
+            }
+            @include respond(tab-port){
+                padding-bottom: 0rem;
+                font-size: 1rem;
+            }
+            }
+
+
+            padding: 3rem;
+            a{
+                 
+                color: rgb(53, 161, 53);
+                text-decoration: none;
+
+                @include respond(tab-port){
+                        font-size: 10px;
+
+                }
+            }
+        }
+       
+    }
+        
+    }
+}
