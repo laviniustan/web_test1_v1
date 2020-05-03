@@ -1,4 +1,6 @@
 .footer{
+ 
+
     .fab, .far {
         font-weight: 400;
         margin-left: 2rem;
@@ -9,6 +11,10 @@
     }
     .companie{
         height: 100%;
+     //================ 
+    
+
+
         @include respond(laptop){
             height: 6rem;
         }
@@ -30,6 +36,10 @@
         padding: 1rem 0rem;
     }
     &__component{
+
+        
+     
+        
         padding: 4rem;
         @include respond(tab-port){
             padding: 2rem;
@@ -50,6 +60,8 @@
             grid-gap: .5rem;
             
             &--logo{
+               
+            
                 display: grid;
                 justify-items: center;
                 grid-gap: 1rem;
@@ -65,11 +77,10 @@
                 .logo{
                     height: 3rem;
                     // padding: 2rem;
+
                     @include respond(laptop){
-                        height: 3rem;
-                     
-                   
-                }
+                        height: 3rem;    
+                     }
             }
          
 

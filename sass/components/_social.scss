@@ -110,6 +110,12 @@
             transition: .5s ease;
             background-color: black;
 
+            @include respond(big-desktop){
+              height: 100%;
+              width: 186%;
+              left: 13px;
+              }
+
             @include respond(desktop){
             width: 186%;
             left: 13px;

@@ -24,6 +24,14 @@
         margin-top: -33rem;
         margin-right: 4rem;
     }
+    @include respond(tab-port) {
+        height: 23rem;
+        margin-top: -26rem;
+    }
+    @include respond(mid) {
+        height: 18rem;
+        margin-top: -21rem;
+    }
 }
 // .img_prod1{
 //     float: right;
@@ -61,6 +69,9 @@
     @include respond(laptopL) {
         font-size: 12rem;
     }
+    @include respond(mid) {
+        font-size: 8rem;
+    }
 
 }
 .reduce{
@@ -73,8 +84,15 @@
         margin-top: -36rem;
     
     }
-
+    @include respond(tab-port) {
+        margin-top: -30rem;
+    }
+    @include respond(mid) {
+        margin-top: -22rem;
+    }
 }
+
+
 // .prod{
 //     margin-top: -67rem;
 //     margin-right: 11rem;
