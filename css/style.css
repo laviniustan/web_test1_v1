@@ -5,6 +5,9 @@
   overflow: auto;
   height: 10rem; }
 
+.logo {
+  height: 80%; }
+
 .navbar a {
   float: left;
   padding: 12px;
@@ -15,10 +18,39 @@
 .navbar a:hover {
   background-color: #000; }
 
+@media screen and (max-width: 1200px) {
+  .logo {
+    height: 3rem; } }
+
+@media screen and (max-width: 1024px) {
+  .logoleft {
+    height: 3rem; }
+  .navbar a {
+    padding: 1px;
+    font-size: 10px; } }
+
+@media screen and (max-width: 900px) {
+  .logoleft {
+    display: none; }
+  .navbar a {
+    padding: 1px;
+    font-size: 10px; }
+  .logo {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    padding: 0px;
+    font-size: 10px; }
+  .bi {
+    margin: 6px; } }
+
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
-    display: block; } }
+    display: block; }
+  .logo {
+    display: none; } }
 
 .nav__menu {
   color: white;
@@ -66,18 +98,23 @@ html {
 .img_prod {
   float: right;
   margin-top: -54rem;
-  margin-right: 5rem;
+  margin-left: 7rem;
   height: 47rem; }
-
-.img_prod1 {
-  float: right;
-  margin-top: -35rem;
-  margin-right: 10rem; }
-
-.img_prod2 {
-  float: right;
-  margin-top: -37rem;
-  margin-right: 10rem; }
+  @media only screen and (max-width: 93.75em) {
+    .img_prod {
+      height: 37rem;
+      margin-top: -43rem;
+      margin-left: 4rem; } }
+  @media only screen and (max-width: 75em) {
+    .img_prod {
+      height: 32rem;
+      margin-top: -36rem;
+      margin-right: 4rem; } }
+  @media only screen and (max-width: 64em) {
+    .img_prod {
+      height: 30rem;
+      margin-top: -33rem;
+      margin-right: 4rem; } }
 
 .button--whiteX2 {
   border-radius: 3rem;
@@ -91,16 +128,25 @@ html {
   color: black;
   width: 20rem;
   margin-left: 8rem; }
+  @media only screen and (max-width: 93.75em) {
+    .motto {
+      margin-left: 4rem; } }
 
 .price {
   font-size: 15rem;
   margin-top: -3rem; }
+  @media only screen and (max-width: 93.75em) {
+    .price {
+      font-size: 12rem; } }
 
 .reduce {
   display: grid;
   justify-content: center;
   float: left;
   margin-top: -55rem; }
+  @media only screen and (max-width: 93.75em) {
+    .reduce {
+      margin-top: -36rem; } }
 
 /* external css: flickity.css */
 .trending {
@@ -224,6 +270,9 @@ html {
 .prodinfo__component {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .prodinfo__component {
+      justify-content: space-around; } }
   @media only screen and (max-width: 56.25em) {
     .prodinfo__component {
       display: grid;
@@ -234,19 +283,26 @@ html {
     width: auto;
     padding: 1rem 0rem;
     margin-left: 3rem; }
+    @media only screen and (max-width: 112em) {
+      .prodinfo__component--leftimg {
+        height: 449px;
+        margin-left: -11rem; } }
+    @media only screen and (max-width: 93.75em) {
+      .prodinfo__component--leftimg {
+        height: 318px;
+        width: auto;
+        margin-right: auto;
+        margin-left: 0rem; } }
     @media only screen and (max-width: 75em) {
       .prodinfo__component--leftimg {
         height: 300px;
         width: auto;
         padding: 1rem 0rem; } }
-    @media only screen and (max-width: 93.75em) {
-      .prodinfo__component--leftimg {
-        height: 318px;
-        width: auto; } }
     @media only screen and (max-width: 64em) {
       .prodinfo__component--leftimg {
-        height: 269px;
-        width: auto; } }
+        height: 256px;
+        width: auto;
+        margin: auto; } }
     @media only screen and (max-width: 56.25em) {
       .prodinfo__component--leftimg {
         height: 198px;
@@ -316,12 +372,20 @@ html {
     top: 50%;
     left: -2rem;
     transform: translateY(-50%); }
+    @media only screen and (max-width: 112em) {
+      .prodinfo__component--arrow {
+        left: -18rem; } }
     @media only screen and (max-width: 93.75em) {
       .prodinfo__component--arrow {
-        height: 6rem; } }
+        height: 6rem;
+        margin-left: 13rem; } }
     @media only screen and (max-width: 75em) {
       .prodinfo__component--arrow {
         height: 71px; } }
+    @media only screen and (max-width: 64em) {
+      .prodinfo__component--arrow {
+        margin-right: 0;
+        height: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .prodinfo__component--arrow {
         height: 45px; } }
@@ -341,28 +405,37 @@ html {
       margin-top: 29%;
       margin-right: -42%;
       height: 4rem; }
+      @media only screen and (max-width: 93.75em) {
+        .prodinfo__component--bgDescription .button {
+          margin-top: 21%; } }
       @media only screen and (max-width: 64em) {
         .prodinfo__component--bgDescription .button {
           margin-top: 21%;
-          margin-right: 0;
+          margin-left: -60px;
           height: 5rem; } }
       @media only screen and (max-width: 56.25em) {
         .prodinfo__component--bgDescription .button {
-          margin-top: 81%;
-          margin-left: -28rem;
-          height: 5rem; } }
+          margin-top: 90%;
+          margin-left: -31rem;
+          height: 4rem; } }
+    @media only screen and (max-width: 112em) {
+      .prodinfo__component--bgDescription {
+        left: 39%;
+        height: 38rem; } }
     @media only screen and (max-width: 93.75em) {
       .prodinfo__component--bgDescription {
         height: 24rem;
-        width: 45rem; } }
+        width: 45rem;
+        left: 46%; } }
     @media only screen and (max-width: 75em) {
       .prodinfo__component--bgDescription {
         height: 26rem;
         width: 48rem; } }
     @media only screen and (max-width: 64em) {
       .prodinfo__component--bgDescription {
-        height: 24rem;
-        width: 45rem; } }
+        height: 26rem;
+        width: 45rem;
+        margin-left: 14px; } }
     @media only screen and (max-width: 56.25em) {
       .prodinfo__component--bgDescription {
         height: 17rem;
@@ -382,6 +455,14 @@ html {
       @media only screen and (max-width: 93.75em) {
         .prodinfo__component--details--list {
           margin-top: 1.5rem; } }
+      @media only screen and (max-width: 64em) {
+        .prodinfo__component--details--list {
+          width: 32rem;
+          margin-left: -64px; } }
+      @media only screen and (max-width: 56.25em) {
+        .prodinfo__component--details--list {
+          width: 37rem;
+          margin-left: -41px; } }
     .prodinfo__component--details ul {
       margin-top: -2rem;
       margin-left: -3rem;
@@ -404,6 +485,9 @@ html {
         .prodinfo__component--details ul li:not(:last-child) {
           border-bottom: 0.5px solid white; }
           @media only screen and (max-width: 56.25em) {
+            .prodinfo__component--details ul li:not(:last-child) {
+              border: none; } }
+          @media only screen and (max-width: 64em) {
             .prodinfo__component--details ul li:not(:last-child) {
               border: none; } }
   .prodinfo__component--button {
@@ -468,6 +552,9 @@ html {
     .infowhy__comp1 img {
       height: 16%;
       width: auto; } }
+  @media only screen and (max-width: 64em) {
+    .infowhy__comp1 {
+      padding: 5rem 11rem 0; } }
   .infowhy__comp1 h1 {
     padding: 1.5rem; }
     @media only screen and (max-width: 56.25em) {
@@ -487,10 +574,17 @@ html {
       .infowhy__comp1--txt {
         width: 100%;
         margin-left: 0rem; } }
+    @media only screen and (max-width: 64em) {
+      .infowhy__comp1--txt {
+        width: 102%;
+        margin-left: 0rem; } }
 
 .infowhy--img {
   margin-top: -5rem;
   padding-bottom: 1rem; }
+  @media only screen and (max-width: 112em) {
+    .infowhy--img {
+      height: 78rem; } }
   @media only screen and (max-width: 93.75em) {
     .infowhy--img {
       margin-top: -15rem;
@@ -499,6 +593,9 @@ html {
     .infowhy--img {
       height: 75rem;
       margin-top: -15rem; } }
+  @media only screen and (max-width: 64em) {
+    .infowhy--img {
+      height: 65rem; } }
   @media only screen and (max-width: 56.25em) {
     .infowhy--img {
       height: 47rem;
@@ -602,6 +699,9 @@ html {
     @media only screen and (max-width: 56.25em) {
       .social .imgElem {
         height: 14rem; } }
+    @media only screen and (max-width: 64em) {
+      .social .imgElem {
+        height: 14rem; } }
   .social__contact {
     display: flex;
     justify-content: space-evenly;
@@ -633,6 +733,9 @@ html {
   .social__media {
     display: grid;
     justify-items: center; }
+    @media only screen and (max-width: 112em) {
+      .social__media {
+        margin-left: -8rem; } }
     .social__media .container {
       position: relative;
       width: 50%; }
@@ -657,14 +760,26 @@ html {
       opacity: 0;
       transition: .5s ease;
       background-color: black; }
+      @media only screen and (max-width: 112em) {
+        .social__media .overlay {
+          width: 186%;
+          left: 13px; } }
+      @media only screen and (max-width: 93.75em) {
+        .social__media .overlay {
+          width: 197%;
+          left: 0px; } }
       @media only screen and (max-width: 75em) {
         .social__media .overlay {
-          width: 92%;
-          margin-left: 14px; } }
+          width: 100%;
+          margin-left: 0px; } }
       @media only screen and (max-width: 56.25em) {
         .social__media .overlay {
           width: 100%;
           margin-left: 3px; } }
+      @media only screen and (max-width: 64em) {
+        .social__media .overlay {
+          width: 100%;
+          margin-left: 0px; } }
     .social__media .container:hover .overlay {
       opacity: .6;
       cursor: pointer; }
@@ -681,15 +796,20 @@ html {
     .social__media--photo {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1rem; }
+      grid-gap: 1rem;
+      margin-right: 15rem; }
       @media only screen and (max-width: 93.75em) {
         .social__media--photo {
           grid-template-columns: repeat(3, 1fr);
-          margin-left: -19rem; } }
+          margin-left: 9rem; } }
       @media only screen and (max-width: 75em) {
         .social__media--photo {
           grid-template-columns: repeat(3, 1fr);
-          margin-left: 0rem; } }
+          margin-left: 9rem; } }
+      @media only screen and (max-width: 75em) {
+        .social__media--photo {
+          grid-template-columns: repeat(3, 1fr);
+          margin-left: 15rem; } }
     .social__media--head {
       padding: 4rem 0rem;
       text-align: center; }
@@ -724,6 +844,9 @@ html {
     @media only screen and (max-width: 56.25em) {
       .footer__component {
         padding: 2rem; } }
+    @media only screen and (max-width: 64em) {
+      .footer__component {
+        padding: 1rem; } }
     .footer__component--list {
       display: grid;
       justify-items: start;
@@ -734,7 +857,8 @@ html {
       .footer__component--list--logo {
         display: grid;
         justify-items: center;
-        grid-gap: 1rem; }
+        grid-gap: 1rem;
+        height: 35rem; }
         @media only screen and (max-width: 56.25em) {
           .footer__component--list--logo {
             display: none;

@@ -1,19 +1,35 @@
 .img_prod{
+    
     float: right;
     margin-top: -54rem;
-    margin-right: 5rem;
+     margin-left: 7rem;
     height: 47rem;
+    @include respond(laptopL) {
+        height: 37rem;
+        margin-top: -43rem;
+        margin-left: 4rem;
+    }
+    @include respond(tab-land) {
+        height: 32rem;
+        margin-top: -36rem;
+        margin-right: 4rem;
+    }
+    @include respond(laptop) {
+        height: 30rem;
+        margin-top: -33rem;
+        margin-right: 4rem;
+    }
 }
-.img_prod1{
-    float: right;
-    margin-top: -35rem;
-    margin-right: 10rem;
-}
-.img_prod2{
-    float: right;
-    margin-top: -37rem;
-    margin-right: 10rem;
-}
+// .img_prod1{
+//     float: right;
+//     margin-top: -35rem;
+//     margin-right: 10rem;
+// }
+// .img_prod2{
+//     float: right;
+//     margin-top: -37rem;
+//     margin-right: 10rem;
+// }
 
 .button--whiteX2{
     border-radius: 3rem;
@@ -28,10 +44,19 @@
     color: black;
     width: 20rem;
     margin-left: 8rem;
+    @include respond(laptopL) {
+        margin-left: 4rem;
+    
+    }
+ 
 }
 .price{
     font-size: 15rem;
     margin-top: -3rem;
+    @include respond(laptopL) {
+        font-size: 12rem;
+    }
+
 }
 .reduce{
     // padding: 1rem;
@@ -39,6 +64,10 @@
     justify-content: center;
     float: left;
     margin-top: -55rem;
+    @include respond(laptopL) {
+        margin-top: -36rem;
+    
+    }
 
 }
 // .prod{

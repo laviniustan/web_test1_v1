@@ -6,7 +6,15 @@
     background-color: black;
     overflow: auto;
     height: 10rem;
+
   }
+  .logo{
+
+ 
+    height: 80%;
+
+  }
+  
   
   .navbar a {
     float: left;
@@ -24,10 +32,63 @@
 //     background-color: #4CAF50;
 //   }
   
+
+  @media screen and (max-width: 1200px) {
+ 
+    .logo{
+      height: 3rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+ 
+    .logoleft{
+      height: 3rem;
+    }
+    .navbar a {
+
+      padding: 1px;
+ 
+      font-size: 10px;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+ 
+    .logoleft{
+      display: none;
+    }
+    .navbar a {
+
+      padding: 1px;
+ 
+      font-size: 10px;
+    }
+
+    .logo{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+ 
+    .navbar a {
+      padding: 0px;
+      font-size: 10px;
+    }
+    .bi {
+      margin: 6px;
+    }
+
+  }
+
   @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
       display: block;
+    }
+    .logo{
+      display: none;
     }
   }
 
@@ -66,3 +127,6 @@
 .bi {
     width: 1.4rem;
 }
+
+
+

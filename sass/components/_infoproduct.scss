@@ -63,6 +63,11 @@
         display: flex;
         align-items: center;
 
+        @include respond(tab-land){
+            justify-content: space-around;
+            
+ 
+       }
         @include respond(tab-port){
             display: grid;
             justify-content: center;
@@ -76,8 +81,19 @@
             width: auto;
             padding: 1rem 0rem;
            margin-left: 3rem;
-         
+
            
+           @include respond (desktop){
+            height: 449px;
+            margin-left: -11rem;
+            }
+            @include respond (laptopL){
+                height: 318px;
+                width: auto;
+                margin-right: auto;
+                margin-left: 0rem;
+            
+            }
             @include respond(tab-land ){
                 height: 300px ;
                 width: auto;
@@ -85,14 +101,11 @@
      
            }
    
-            @include respond (laptopL){
-                height: 318px;
-                width: auto;
-            
-            }
+         
             @include respond (laptop){
-                height: 269px;
+                height: 256px;
                 width: auto;
+                margin: auto;
 
             }
             @include respond(tab-port){
@@ -199,11 +212,21 @@
             left: -2rem;
             transform: translateY(-50%);
            
+            @include respond (desktop){
+                left: -18rem;
+            }
             @include respond (laptopL){
                     height: 6rem;
+                    margin-left: 13rem;
             }
             @include respond(tab-land){
                 height: 71px;
+            }
+            
+            @include respond (laptop){
+                margin-right: 0;
+                height: 4rem  ;
+
             }
             @include respond (tab-port){
                 height: 45px;
@@ -218,30 +241,42 @@
                 margin-right: -42%;
                 height: 4rem;
 
+                @include respond (laptopL){
+                    margin-top: 21%;
+    
+                }
                 @include respond (laptop){
                     margin-top: 21%;
-                    margin-right: 0; 
+                    margin-left: -60px;
                     height: 5rem;
                 }
                 @include respond (tab-port){
-                    margin-top: 81%;
-                    margin-left: -28rem;
-                    height: 5rem;
+                    margin-top: 90%;
+                    margin-left: -31rem;
+                    height: 4rem;
                 }
+          
+            }
+            @include respond (desktop){
+                left: 39%;
+                height: 38rem;
             }
            
             @include respond (laptopL){
                 height: 24rem;
                 width: 45rem;
+                left: 46%;
 
             }
             @include respond (tab-land){
                 height: 26rem;
                 width: 48rem;
+                
             }
             @include respond (laptop){
-                height: 24rem;
+                height: 26rem;
                 width: 45rem;
+                margin-left: 14px;
             }
             @include respond (tab-port){
                 height: 17rem;
@@ -291,6 +326,19 @@
                 @include respond (laptopL){
                    margin-top: 1.5rem;
                 }
+                @include respond (laptop){
+               
+                    width: 32rem;
+                    margin-left: -64px;
+                 }
+                 @include respond (tab-port){
+               
+                    width: 37rem;
+    margin-left: -41px;
+                 }
+ 
+
+
             }
             ul{
                 margin-top: -2rem;
@@ -321,6 +369,9 @@
                         border-bottom: 0.5px solid white;
                       
                         @include respond (tab-port){
+                            border: none;
+                        }
+                        @include respond (laptop){
                             border: none;
                         }
 

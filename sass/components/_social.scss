@@ -7,6 +7,9 @@
      height: 14rem;
       
    }
+   @include respond(laptop){
+    height: 14rem;
+  }
   }
     // display: grid;
     // font-family: Montserra;
@@ -68,6 +71,11 @@
          display: grid;
          justify-items: center;
          
+         @include respond(desktop){
+          margin-left: -8rem;
+        }
+       
+
          .container {
             position: relative;
             width: 50%;
@@ -79,6 +87,7 @@
             @include respond(tab-land){
               width: 100%
             }
+      
           }
           
           .image {
@@ -91,20 +100,38 @@
             position: absolute;
             top: 0;
             bottom: 0;
+            // left: 1.2rem;
             left: 0;
             right: 0;
             height: 100%;
+            // width: 184%;
             width: 200%;
             opacity: 0;
             transition: .5s ease;
             background-color: black;
+
+            @include respond(desktop){
+            width: 186%;
+            left: 13px;
+            }
+            @include respond(laptopL){
+              width: 197%;
+              left: 0px;
+          
+              }
+              
             @include respond(tab-land){
-              width: 92%;
-              margin-left: 14px;
+              width: 100%;
+              margin-left: 0px;
             }
             @include respond(tab-port){
               width: 100%;
               margin-left: 3px;
+               
+            }
+            @include respond(laptop){
+              width: 100%;
+              margin-left: 0px;
                
             }
 
@@ -128,19 +155,26 @@
           }
 
          &--photo{
+
             display: grid;
             grid-template-columns: repeat(4, 1fr) ;
             grid-gap: 1rem;
+             margin-right: 15rem;
+            
 
             @include respond(laptopL){
                   grid-template-columns: repeat(3, 1fr);
      
-               margin-left: -19rem;
+               margin-left: 9rem;
             }
-
+        
             @include respond(tab-land){
               grid-template-columns: repeat(3, 1fr) ;
-              margin-left: 0rem;
+              margin-left: 9rem;
+            }
+            @include respond(tab-land){
+              grid-template-columns: repeat(3, 1fr) ;
+              margin-left: 15rem;
             }
 
          }

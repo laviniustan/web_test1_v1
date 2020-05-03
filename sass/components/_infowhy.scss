@@ -54,8 +54,8 @@
         margin-top: -6rem;
        }
     
-    
-
+        
+   
        @include respond(tab-land){
         // background-size: 100%;
             padding: 5rem 19rem 0;
@@ -66,12 +66,16 @@
             
 
          }
-         @include respond(tab-port ){
+         @include respond(tab-port){
             img{
                 height: 16%;
                 width: auto
             }
         }
+        @include respond(laptop){
+            padding: 5rem 11rem 0;
+           }  
+    
 
         h1{
             padding: 1.5rem;
@@ -100,6 +104,10 @@
                 width: 100%;
                 margin-left: 0rem;
             }
+            @include respond(laptop){
+                width: 102%;
+                margin-left: 0rem;
+            }
 
         }
     }
@@ -108,6 +116,10 @@
         margin-top: -5rem ;
         padding-bottom: 1rem;
 
+        @include respond(desktop){
+            height: 78rem;
+        }
+
         @include respond(laptopL){
             margin-top: -15rem;
             height: 95rem;
@@ -115,6 +127,11 @@
         @include respond(tab-land){
             height: 75rem;
             margin-top: -15rem ;
+        }
+        @include respond(laptop){
+            height: 65rem;
+            // margin-top: -24rem;
+        
         }
         @include respond(tab-port ){
             height: 47rem;

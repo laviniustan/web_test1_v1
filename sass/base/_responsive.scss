@@ -33,7 +33,9 @@
     @if $breakpoint == laptopL {
         @media only screen and (max-width: 93.75em) { @content };    //1500
     }
-   
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 112em) { @content };    //1800
+    }
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
