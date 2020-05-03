@@ -1,4 +1,40 @@
 @charset "UTF-8";
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 190; }
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+
+.dropdown-content a:hover {
+  background-color: #ddd; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
 .navbar {
   width: 100%;
   background-color: black;
@@ -7,6 +43,11 @@
 
 .logo {
   height: 80%; }
+
+.dropdown-menu.show {
+  z-index: 3;
+  background-color: black;
+  color: white; }
 
 .navbar a {
   float: left;
@@ -59,19 +100,6 @@
     margin: 0rem 20px;
     size: 3rem; }
 
-.btn.dropdown-toggle {
-  color: white; }
-  .btn.dropdown-toggle:hover {
-    color: white; }
-
-.dropdown-menu.show {
-  z-index: -3;
-  background-color: black;
-  color: white; }
-
-.bi {
-  width: 1.4rem; }
-
 * {
   margin: 0;
   padding: 0;
@@ -98,13 +126,16 @@ html {
 .img_prod {
   float: right;
   margin-top: -54rem;
-  margin-left: 7rem;
+  margin-left: 3rem;
   height: 47rem; }
+  @media only screen and (min-width: 112.5em) {
+    .img_prod {
+      margin-right: 4rem; } }
   @media only screen and (max-width: 93.75em) {
     .img_prod {
       height: 37rem;
       margin-top: -43rem;
-      margin-left: 4rem; } }
+      margin-right: 7rem; } }
   @media only screen and (max-width: 75em) {
     .img_prod {
       height: 32rem;
@@ -152,6 +183,8 @@ html {
 .trending {
   padding: 5rem;
   display: flex; }
+  .trending svg {
+    color: #40d640; }
   @media only screen and (max-width: 75em) {
     .trending {
       display: flex;
@@ -872,9 +905,11 @@ html {
         margin-top: 1rem; }
         .footer__component--list--contact--media {
           size: 7rem;
-          padding: 1rem 0rem; }
+          padding: 1rem 0rem;
+          display: flex;
+          justify-self: center; }
           .footer__component--list--contact--media > * {
-            padding-left: 2rem; }
+            padding: 0rem 2.6rem; }
 
 .button, .button:link, .button:visited {
   text-decoration: none;

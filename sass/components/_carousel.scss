@@ -2,12 +2,17 @@
     
     float: right;
     margin-top: -54rem;
-     margin-left: 7rem;
+     margin-left: 3rem;
     height: 47rem;
+
+
+    @include respond(big-desktop) {
+        margin-right: 4rem;
+    }
     @include respond(laptopL) {
         height: 37rem;
         margin-top: -43rem;
-        margin-left: 4rem;
+        margin-right: 7rem;
     }
     @include respond(tab-land) {
         height: 32rem;
